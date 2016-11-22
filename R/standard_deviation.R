@@ -1,7 +1,11 @@
 #' Get the standard deviation of a vector
 #' 
-#' @param numbers a numeric vector
-#' @return The standard deviation of the numeric vector 
+#' @param x a numeric vector
+#' @return The standard deviation of the numeric vector
+#' 
+#' @examples
+#' standard_deviation(c(1, 2, 3))
+#' @export
 standard_deviation <- function(x) {
   n <- length(x)
   mean = sum(x) / n
