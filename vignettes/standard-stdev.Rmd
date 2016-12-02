@@ -1,0 +1,26 @@
+---
+title: "Standard Dev"
+author: "Matthew Emery"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Standard Dev}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Here's a standard deviation function
+
+```{r}
+source("../R/standard_deviation.R")
+
+standard_deviation(c(1, 2))
+```
+
+But wait, there's more!
+
+```{r}
+standard_error(c(1, 2))
+```
+
+Incredible!

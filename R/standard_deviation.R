@@ -16,7 +16,7 @@ standard_deviation <- function(x) {
 }
 
 #' Calculate the standard error of a vector
-#' @param x: a numeric vector
+#' @param x a numeric vector
 #' @return: The standard error
 #'
 #' @examples
