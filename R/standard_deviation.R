@@ -1,3 +1,5 @@
+library(assertthat)
+
 #' Get the standard deviation of a vector
 #'
 #' @param x a numeric vector
@@ -9,9 +11,10 @@
 #' @export
 standard_deviation <- function(x) {
   n <- length(x)
+  assert_that(n >= 2)
   mean = sum(x) / n
-  ssq <- sum((x-mean)^2)
-  stddev = sqrt(ssq/n)
+  ssq <- sum((x - mean)^2)
+  stddev = sqrt(ssq/(n - 1))
   return(stddev)
 }
 
