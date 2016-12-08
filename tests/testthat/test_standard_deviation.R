@@ -15,7 +15,7 @@ test_that('erroronous standard deviation entries', {
   expect_error(standard_deviation(c(0)))
   expect_error(standard_deviation(0))
   expect_error(standard_deviation())
-  expect_error(standard_deviation(c("ZERO", "ONE")))
+  expect_error(standard_deviation(c("0", "1")))
 })
 
 test_that('standard error functions and is unbiased', {
@@ -29,5 +29,5 @@ test_that('erroronous standard error entries', {
   expect_error(standard_error(c(0)))
   expect_error(standard_error(0))
   expect_error(standard_error())
-  expect_error(standard_error(c("ZERO", "ONE")))
+  expect_error(standard_error(c("0", "1")))
 })
