@@ -10,7 +10,7 @@ library(assertthat)
 #' 0.8164966
 #' @export
 standard_deviation <- function(x) {
-  assert_that(is.numeric())
+  assert_that(is.numeric(x))
   n <- length(x)
   assert_that(n >= 2)
   mean = sum(x) / n
