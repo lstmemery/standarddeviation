@@ -11,9 +11,9 @@ library(assertthat)
 #' 1
 #' @export
 standard_deviation <- function(x) {
-  assert_that(is.numeric(x))
+  stopifnot(is.numeric(x))
   n <- length(x)
-  assert_that(n >= 2)
+  stopifnot(n >= 2)
   mean = sum(x) / n
   ssq <- sum((x - mean)^2)
   stddev = sqrt(ssq/(n - 1))
