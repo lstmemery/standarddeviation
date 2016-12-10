@@ -12,6 +12,7 @@ vignette: >
 Here's a standard deviation function
 
 ```{r}
+library(assertthat)
 source("../R/standard_deviation.R")
 
 standard_deviation(c(1, 2))
