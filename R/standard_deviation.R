@@ -6,8 +6,9 @@ library(assertthat)
 #' @return The standard deviation of the numeric vector
 #'
 #' @examples
+#' library(assertthat)
 #' standard_deviation(c(1, 2, 3))
-#' 0.8164966
+#' 1
 #' @export
 standard_deviation <- function(x) {
   assert_that(is.numeric(x))
@@ -24,7 +25,8 @@ standard_deviation <- function(x) {
 #' @return: The standard error
 #'
 #' @examples
+#' library(assertthat)
 #' standard_error(c(1, 2, 3))
-#' 0.4714045
+#' 0.5773503
 #' @export
 standard_error <- function(x) standard_deviation(x)/sqrt(length(x))
