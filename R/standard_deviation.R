@@ -5,8 +5,8 @@ library(assertthat)
 #' @param x a numeric vector
 #' @return The standard deviation of the numeric vector
 #'
+#' @import assertthat
 #' @examples
-#' library(assertthat)
 #' standard_deviation(c(1, 2, 3))
 #' 1
 #' @export
@@ -24,8 +24,8 @@ standard_deviation <- function(x) {
 #' @param x a numeric vector
 #' @return: The standard error
 #'
+#' @import assertthat
 #' @examples
-#' library(assertthat)
 #' standard_error(c(1, 2, 3))
 #' 0.5773503
 #' @export
