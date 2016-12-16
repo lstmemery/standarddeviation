@@ -29,4 +29,7 @@ standard_deviation <- function(x) {
 #' standard_error(c(1, 2, 3))
 #' 0.5773503
 #' @export
-standard_error <- function(x) standard_deviation(x)/sqrt(length(x))
+standard_error <- function(x) {
+  stderr = standard_deviation(x)/sqrt(length(x))
+  return(stderr)
+}
